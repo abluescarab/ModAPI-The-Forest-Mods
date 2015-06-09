@@ -11,6 +11,7 @@ namespace CheatMenu
     {
         protected bool visible = false;
         public static bool GodMode = false;
+        public static bool Invincible = false;
         public static float SpeedMultiplier = 1f;
         public static float JumpMultiplier = 1f;
         public static bool FlyMode = false;
@@ -18,6 +19,8 @@ namespace CheatMenu
         public static float TimeSpeed = 0.13f;
         public static bool InstantTree = false;
         public static bool InstantBuild = false;
+        public static bool UnlimitedFlashlight = false;
+        public static bool UnlimitedRebreather = false;
         protected float a = 2f;
         protected GUIStyle labelStyle;
         protected static bool Already = false;
@@ -43,12 +46,20 @@ namespace CheatMenu
                     labelStyle.fontSize = 12;
                 }
 
-                GUI.Box(new Rect(10, 10, 400, 400), "Cheat menu", GUI.skin.window);
+                GUI.Box(new Rect(10, 10, 400, 490), "Cheat menu", GUI.skin.window);
 
                 float cY = 50f;
                 GUI.Label(new Rect(20f, cY, 150f, 20f), "God mode:", labelStyle);
                 GodMode = GUI.Toggle(new Rect(170f, cY, 20f, 30f), GodMode, "");
                 cY += 30f;
+
+                if(GodMode) GodMode = RadioButtonToggle();
+
+                GUI.Label(new Rect(20f, cY, 150f, 20f), "Invincible:", labelStyle);
+                Invincible = GUI.Toggle(new Rect(170f, cY, 20f, 30f), Invincible, "");
+                cY += 30f;
+
+                if(Invincible) Invincible = RadioButtonToggle();
 
                 GUI.Label(new Rect(20f, cY, 150f, 20f), "Flymode:", labelStyle);
                 FlyMode = GUI.Toggle(new Rect(170f, cY, 20f, 30f), FlyMode, "");
@@ -64,6 +75,14 @@ namespace CheatMenu
 
                 GUI.Label(new Rect(20f, cY, 150f, 20f), "Instant Build:", labelStyle);
                 InstantBuild = GUI.Toggle(new Rect(170f, cY, 20f, 30f), InstantBuild, "");
+                cY += 30f;
+
+                GUI.Label(new Rect(20f, cY, 150f, 20f), "Unlimited flashlight:", labelStyle);
+                UnlimitedFlashlight = GUI.Toggle(new Rect(170f, cY, 20f, 30f), UnlimitedFlashlight, "");
+                cY += 30f;
+
+                GUI.Label(new Rect(20f, cY, 150f, 20f), "Unlimited rebreather:", labelStyle);
+                UnlimitedRebreather = GUI.Toggle(new Rect(170f, cY, 20f, 30f), UnlimitedRebreather, "");
                 cY += 30f;
 
                 GUI.Label(new Rect(20f, cY, 150f, 20f), "Speed:", labelStyle);
@@ -91,6 +110,12 @@ namespace CheatMenu
             }
         }
 
+        // allows for radio button functionality -- only one
+        // GUI.Toggle may be selected at a time
+        private bool RadioButtonToggle() {
+            GodMode = Invincible = false;
+            return true;
+        }
 
         private void Update()
         {

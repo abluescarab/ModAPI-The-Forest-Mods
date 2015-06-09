@@ -226,6 +226,7 @@
   <ItemGroup>
     <Compile Include="CheatMenuComponent.cs"  />
 <Compile Include="CStructure.cs"  />
+<Compile Include="FlashlightController.cs"  />
 <Compile Include="FPController.cs"  />
 <Compile Include="Stats.cs"  />
 <Compile Include="TCutChunk.cs"  />

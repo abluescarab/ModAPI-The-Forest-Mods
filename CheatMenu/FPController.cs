@@ -47,6 +47,13 @@ namespace CheatMenu
             this.strafeSpeed = baseStrafeSpeed * CheatMenuComponent.SpeedMultiplier;
             this.swimmingSpeed = baseSwimmingSpeed * CheatMenuComponent.SpeedMultiplier;
 
+            if(CheatMenuComponent.UnlimitedRebreather) {
+                if(this.swimming && this.Stats.AirBreathing.UseRebreather) {
+                    this.Stats.AirBreathing.CurrentRebreatherAir =
+                        this.Stats.AirBreathing.MaxRebreatherAirCapacity;
+                }
+            }
+
             if (CheatMenuComponent.FlyMode && !PushingSled)
             {
                 this.rb.useGravity = false;

@@ -74,6 +74,13 @@ namespace CheatMenu
                 this.Thirst = 0;
                 this.Starvation = 0;
             }
+
+            if(CheatMenuComponent.Invincible) {
+                this.Health = 100f;
+                this.Armor = 100;
+                this.Starvation = 0;
+            }
+
             base.Update();
         }
     }
