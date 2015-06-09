@@ -1,7 +1,7 @@
 # ModAPI-The-Forest-Mods
 Included mods for "The Forest" in the ModAPI
 
-## Included Cheats
+## Included Cheats (CheatMenu)
 **God Mode** -
 * Never need to eat
 * Never need to drink
