@@ -1,5 +1,5 @@
 <Mod ID="CheatMenu">
-  <Compatible>0.18</Compatible>
+  <Compatible>0.18c</Compatible>
   <Button Standard="G" ID="OpenMenu">
     <Name>
       <EN>Open cheat menu</EN>

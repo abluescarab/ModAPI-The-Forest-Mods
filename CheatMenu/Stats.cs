@@ -76,6 +76,7 @@ namespace CheatMenu
             }
 
             if(CheatMenuComponent.Invincible) {
+                this.IsBloody = false;
                 this.Health = 100f;
                 this.Armor = 100;
                 this.Starvation = 0;
