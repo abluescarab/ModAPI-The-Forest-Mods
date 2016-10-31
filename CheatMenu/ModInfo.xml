@@ -1,5 +1,5 @@
 <Mod ID="CheatMenu">
-  <Compatible>0.28c</Compatible>
+  <Compatible>0.48b</Compatible>
   <Button Standard="F1" ID="OpenMenu">
     <Name>
       <EN>Open cheat menu</EN>
@@ -51,16 +51,12 @@
     </Description>
   </Button>
   <Name>
-    <EN>CheatMenu</EN>
-    <DE>Cheatmenü</DE>
+    <EN>Cheat Menu</EN>
+    <DE>Cheat Menü</DE>
   </Name>
   <Description>
     <EN>This mod grants you superpowers and some other nice features like instant build or instant tree cutting.</EN>
     <DE>Dieser Mod verleiht dir Superkräfte und einige weitere nützliche Möglichkeiten wie Sofortbau oder schnelles Bäume fällen.</DE>
   </Description>
-<<<<<<< HEAD
-  <Version>0.2.0.0</Version>
-=======
-  <Version>0.1.4</Version>
->>>>>>> 2e4235dbc164ba124fc9b397185d51fa2976e2f8
+  <Version>0.1.5</Version>
 </Mod>

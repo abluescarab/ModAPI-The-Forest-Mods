@@ -57,10 +57,6 @@
       <HintPath>../../../modlib/TheForest/TheForest_data/Managed/UnityScript.Lang.dll</HintPath>
       <Private>False</Private>
     </Reference>
-<Reference Include="AmplifyColor">
-      <HintPath>../../../modlib/TheForest/TheForest_data/Managed/AmplifyColor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
 <Reference Include="AmplifyMotion">
       <HintPath>../../../modlib/TheForest/TheForest_data/Managed/AmplifyMotion.dll</HintPath>
       <Private>False</Private>
@@ -111,6 +107,10 @@
     </Reference>
 <Reference Include="Rewired_Core">
       <HintPath>../../../modlib/TheForest/TheForest_data/Managed/Rewired_Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+<Reference Include="Rewired_Windows_Lib">
+      <HintPath>../../../modlib/TheForest/TheForest_data/Managed/Rewired_Windows_Lib.dll</HintPath>
       <Private>False</Private>
     </Reference>
 <Reference Include="SteamworksManaged">
