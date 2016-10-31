@@ -34,7 +34,8 @@ namespace CheatMenu
                 TheForest.Utils.Scene.RainTypes.RainHeavy.SetActive(false);
                 TheForest.Utils.Scene.RainTypes.RainMedium.SetActive(false);
                 TheForest.Utils.Scene.RainTypes.RainLight.SetActive(false);
-                TheForest.Utils.Scene.Clock.AfterStorm.SetActive(false);
+                //TheForest.Utils.Scene.Clock.AfterStorm.SetActive(false);
+                
                 if (CheatMenuComponent.ForceWeather == 0)
                 {
                     this.Raining = true;

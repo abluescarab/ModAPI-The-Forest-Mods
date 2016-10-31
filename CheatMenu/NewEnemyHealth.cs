@@ -7,7 +7,7 @@ namespace CheatMenu
 {
     class NewEnemyHealth : EnemyHealth
     {
-        protected override void Hit(int damage)
+        public override void Hit(int damage)
         {
             if (CheatMenuComponent.InstaKill)
                 base.Hit(damage * 1000000);
